@@ -27,6 +27,7 @@ export enable_swap_tag=false
 #是否引入额外词汇表
 export output_arbitrary_targets_for_infeasible_examples=false
 #工作语料目录
+export Root_Dir="${HOME}/Documents/Github/text_scalpel"
 export WIKISPLIT_DIR="${Root_Dir}/corpus/rephrase_corpus"
 #BERT目标，这里是轻量级的RoBERTa-tiny-clue，如果用别的bert，configs/lasertagger_config.json 也要改改
 export BERT_BASE_DIR="${Root_Dir}/bert_base/RoBERTa-tiny-clue"
