@@ -49,6 +49,8 @@ def yield_sources_and_targets(
         with tf.io.gfile.GFile(input_file) as f:
             for line in f:
                 source, target = line.rstrip('\n').replace('\ufeff', '').split('\t')
+                if len(source) <= 2 or len(target) <= 2:
+                    continue
                 yield [source], target
 
     for sources, target in _yield_wikisplit_examples(input_file):
