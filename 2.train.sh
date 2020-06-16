@@ -48,7 +48,7 @@ ${python} run_lasertagger.py \
   --eval_file=${OUTPUT_DIR}/tune.tf_record \
   --label_map_file=${OUTPUT_DIR}/label_map.txt \
   --model_config_file=${CONFIG_FILE} \
-  --output_dir=${OUTPUT_DIR}/models/${EXPERIMENT} \
+  --output_dir=${OUTPUT_DIR}/models/ \
   --init_checkpoint=${BERT_BASE_DIR}/bert_model.ckpt \
   --do_train=true \
   --keep_checkpoint_max=${keep_checkpoint_max} \
